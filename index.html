@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=M+PLUS+1:wght@400;500&family=Poppins:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="wrapper-header wrapper">
+                <div class="header-main">
+                    <div class="header__main--logo">
+                        <a href="" class="logo__name">Storefront</a>
+                        <p class="slogan">WooCommerce</p>
+                    </div>
+                    <nav class="header__menu--navigation">
+                        <ul class="menu__navigation--list">
+                            <li class="menu__navigation--item">
+                                <a href="" class="menu__navigation--link">My Account</a>
+                            </li>
+                            <li class="menu__navigation--item">
+                                <a href="" class="menu__navigation--link">About this Demo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="menu-btn btn" id="btn-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <span>Menu</span> 
+                    </button>
+                </div>
+                <div class="header-sub">
+                    <div class="primary-navigation" id="primary-navigation">
+                        <ul class="primary__nav--list">
+                            <li class="primary__nav--item first-item">
+                                <a href="" class="primary__nav--link">Blog</a>
+                            </li>
+                            <li class="primary__nav--item">
+                                <a href="" class="primary__nav--link">Shop</a>
+                            </li>
+                            <li class="primary__nav--item">
+                                <a href="" class="primary__nav--link">Single Product Homepage Example</a>
+                            </li>
+                            <li class="primary__nav--item">
+                                <a href="" class="primary__nav--link">Pricing Tables</a>
+                            </li>
+                            <li class="primary__nav--item last-item">
+                                <a href="" class="primary__nav--link">Reviews</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-header-cart">
+                        <div class="site-cart">
+                            <a href="" class="site__cart--link">
+                                <span class="cart-price">£499.95</span>
+                                <span class="cart-count">1 item</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="shopping-cart">
+                            <div class="cart-item">
+                                <div class="item">
+                                    <a href="" class="cart-item-link">
+                                        <div class="cart-close">
+                                            <div class="svg-close-cart">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                                </svg>
+                                            </div>
+                                            <span class="product-cart-name">
+                                                Lowepro ProTactic 350 AW
+                                                Lowepro ProTactic 350 AW
+                                            </span>					                                              
+                                        </div>
+                                        <div class="cart-img">
+                                            <img src="./src/img/Capture.PNG" alt="">
+                                        </div>
+                                    </a>
+                                    <span class="quantity">1 x £199.95</span>
+                                </div>
+                                <p class="cart-total">Subtotal: £199.95</p>
+                                <div class="cart-btn">
+                                    <a href="" class="btn cart__view">View cart</a>
+                                    <a href="" class="btn cart__checkout">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main-video">
+                <div class="overplay">
+                </div>
+                <div class="video-wrapper">
+                    <video autoplay loop muted src="./src/video/Chandelier.mp4"></video>
+                    <div class="go-shopping-wrapper">
+                        <div class="go-shopping">
+                            <h1 class="go-shopping-title">Spring is here!</h1>
+                            <div class="hero-content">
+                                <p class="hero-description">
+                                    Like this full screen hero component? Add one to your Storefront powered shop with the Storefront Parallax Hero extension.
+                                </p>
+                                <p class="hero-shopping">
+                                    <a href="" class="hero-shopping-link">
+                                        Go shopping →
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="wrapper">
+                <section class="product-categories">
+                    <div class="wrapper-product">
+                        <h2 class="product-cate-title">Product Categories</h2>
+                        <div class="product-categories-content">
+                            <div class="product-cate">
+                                <a href="" class="product-cate-link">
+                                    <img src="./src/img/product-category/1.PNG" alt="">
+                                    <h2 class="product-cate-name">Clothing <span class="count"> (47)</span> </h2>
+                                </a>
+                            </div>
+                            <div class="product-cate">
+                                <a href="" class="product-cate-link">
+                                    <img src="./src/img/product-category/2.PNG" alt="">
+                                    <h2 class="product-cate-name">Clothing <span class="count"> (47)</span> </h2>
+                                </a>
+                            </div>
+                            <div class="product-cate">
+                                <a href="" class="product-cate-link">
+                                    <img src="./src/img/product-category/3.PNG" alt="">
+                                    <h2 class="product-cate-name">Clothing <span class="count"> (47)</span> </h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- product recent -->
+            <div class="wrapper">
+                <section class="product-recent">
+                    <div class="wrapper-product">
+                        <h2 class="product-recent-title">Recent Product</h2>
+                        <div class="product-recent-content">
+                            <div class="product-rec">
+                                <a href="" class="product-rec-link">
+                                    <img src="./src/img/product-recent/1.PNG" alt="">
+                                    <h2 class="product-rec-name">Build Your DSLR</h2>
+                                    <span class="recent-product-price">£1000</span>
+                                </a>
+                                <a href="" class="btn btn-recent-add-cart">Add to cart</a>
+                            </div>
+                            <div class="product-rec">
+                                <a href="" class="product-rec-link">
+                                    <img src="./src/img/product-recent/2.PNG" alt="">
+                                    <h2 class="product-rec-name">Lowepro Slingshot Edge 250 AW</h2>
+                                    <span class="recent-product-price">£109.95</span>
+                                </a>
+                                <a href="" class="btn btn-recent-add-cart">Add to cart</a>
+                            </div>
+                            <div class="product-rec">
+                                <a href="" class="product-rec-link">
+                                    <img src="./src/img/product-recent/3.PNG" alt="">
+                                    <h2 class="product-rec-name">Lowepro Pro Roller x300 AW</h2>
+                                    <span class="recent-product-price">£499.95</span>
+                                </a>
+                                <a href="" class="btn btn-recent-add-cart">Add to cart</a>
+                            </div>
+                            <div class="product-rec">
+                                <a href="" class="product-rec-link">
+                                    <img src="./src/img/product-recent/4.PNG" alt="">
+                                    <h2 class="product-rec-name">Lowepro ProTactic 350 AW</h2>
+                                    <span class="recent-product-price">£199.95</span>
+                                </a>
+                                <a href="" class="btn btn-recent-add-cart">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
