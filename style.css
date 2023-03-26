@@ -65,6 +65,11 @@ header {
     position: relative;
 }
 
+.wrapper-product-rate {
+    margin: 9px auto 55px;
+    padding: 18px;
+}
+
 .header-main, .header-sub{
     padding: 0 40px;
     display: flex;
@@ -525,7 +530,25 @@ header {
     height: 20px;
 }
  
+/* products rate */
+.product-rate-link {
+    margin-bottom: 70px;
+}
 
+
+/* On sale products */
+.product-sale-link {
+    margin-bottom: 40px;
+}
+
+.product-span-price {
+    color: var(--bg-header);
+    font-size: 15px;
+}
+
+.btn-add-cart-sale {
+
+}
 /* video main end */
 
 
@@ -549,12 +572,27 @@ header {
     .product-content-link {
         margin-bottom: 45px;
     }
+
+    /* rec product */
+    .product-rec-link {
+        margin-bottom: 5px;
+    }
     
+    /* rate product */
+    .product-rate-link {
+        margin-bottom: 48px;
+
+    }
 }
 
 @media screen and (max-width: 992px) {
     .product-a {
         max-height: 352px;
+    }
+
+    /* rec product */
+    .product-rec-link {
+        margin-bottom: -12px;
     }
 }
 
@@ -567,6 +605,17 @@ header {
     .product-content-link {
         margin-bottom: 35px;
     }
+
+    /* rec product */
+    .product-rec-link {
+        margin-bottom: -4px;
+    }
+
+    /* sale product */
+    .product-sale-link {
+        margin-bottom: 0px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -675,6 +724,16 @@ header {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* product rec */
+    .product-rec-link {
+        margin-bottom: 0px;
+    }
+
+    /* product rate */
+    .product-rate-link {
+        margin-bottom: 36px;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -695,6 +754,26 @@ header {
     .product-content-link {
         margin-bottom: 70px;
 
+    }
+
+    /* product rec */
+    .product-rec-link {
+        margin-bottom: 60px;
+    }
+
+    /* product rate */
+    .product-rate-link {
+        margin-bottom: 58px;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .primary-navigation {
+        top: 63px;
+    }
+
+    .site-header-cart {
+        top: 13px;
     }
 }
 
@@ -731,7 +810,7 @@ header {
 
 .primary-navigation {
     transition: height 0.5s linear;
-    
+    z-index: 300;
 }
 
 
