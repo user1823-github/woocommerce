@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-ul, p, h1, h2, h3 {
+ul, p, h1, h2, h3, hr {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -54,6 +54,9 @@ header {
     
 }
 
+section.section-wrapper {
+    padding: 20px;
+}
 .wrapper-header {
     height: 164px;
 }
@@ -66,8 +69,7 @@ header {
 }
 
 .wrapper-product-rate {
-    margin: 9px auto 55px;
-    padding: 18px;
+    margin: 9px auto 5px;
 }
 
 .header-main, .header-sub{
@@ -545,12 +547,108 @@ header {
     color: var(--bg-header);
     font-size: 15px;
 }
+ 
+/* end video main */
 
-.btn-add-cart-sale {
-
+/* guarantee */
+.wrapper-guarantee {
+    background-color: #f7f7f7;
 }
-/* video main end */
 
+.section-wrapper.section-guarantee {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 60px 0;
+}
+
+.gunrantee-content {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.gunrantee-icon {
+    display: flex;
+    align-items: center;
+}
+
+.gunrantee-icon svg {
+    width: 47px;
+    height: 47px;
+    color: #7f54b3;
+    font-weight: 700;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.gunrantee-icon .nav-text {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.gunrantee-icon .nav-text a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 13%;
+}
+
+.gunrantee-icon .nav-text a {
+    font-size: 18px;
+    font-weight: bold;
+    /* text-decoration: ; */
+}
+
+/* footer */
+footer {
+    background-color: #f7f7f7;
+}
+.wrapper-footer {
+    height: 100px;
+    /* background-color: red; */
+}
+
+.site-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-button {
+    display: flex;
+}
+
+.icon-link-footer {
+    margin-right: 20px;
+}
+
+.icon-link-footer i {
+    font-size: 25px;
+    color: purple;
+}
+
+.copyright {
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.automattic a {
+    font-size: 19px;
+    color: #7f54b3;
+    font-weight: 600;
+}
+
+/* end footer */
+
+@media screen and (max-width: 1170px) {
+    .site-pad {
+        padding: 0 20px;
+    }
+}
 
 @media screen and (max-width: 1023px) {
     .primary__nav--item .primary__nav--link {
@@ -594,6 +692,24 @@ header {
     .product-rec-link {
         margin-bottom: -12px;
     }
+}
+
+@media screen and (max-width: 970px) {
+    .gunrantee-icon {
+        display: block;
+        text-align: center;
+    }
+    
+    .gunrantee-icon svg,
+    .gunrantee-icon .nav-text {
+        display: block;
+        width: 80%;
+    }
+
+    .gunrantee-icon svg {
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 883px) {
@@ -734,6 +850,49 @@ header {
         margin-bottom: 36px;
     }
 
+
+    /* gunrantee */
+    .gunrantee-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .gunrantee-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gunrantee-icon svg {
+        width: fit-content;
+        margin-bottom: 0;
+    }
+    
+    .gunrantee-icon .nav-text {
+        width: fit-content;
+    }
+
+
+    /* footer */
+    .site-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .follow-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .automattic {
+        text-align: center;
+    }
+
+    .wrapper-footer {
+        height: 100%
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -775,6 +934,8 @@ header {
     .site-header-cart {
         top: 13px;
     }
+
+
 }
 
 @media screen and (max-width: 475px) {
@@ -798,6 +959,17 @@ header {
 
 }
 
+@media screen and (max-width: 412px) {
+    .gunrantee-icon {
+        display: block;
+    }
+
+    .gunrantee-icon svg,
+    .gunrantee-icon .nav-text {
+        width: 100%;
+        display: block;
+    }
+}
 
 
 @keyframes animationOpacity {
