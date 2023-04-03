@@ -177,7 +177,7 @@ section.section-wrapper {
     display: block;
 }
 
-.cart-item .cart-item-link {
+.cart-items .cart-item-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,9 +197,13 @@ section.section-wrapper {
     font-size: 14px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    white-space: normal;
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-wrap: break-word;
+  /* hoặc */
+  /* word-break: break-all; */
     max-width: 130px;
 }
 
@@ -229,32 +233,32 @@ section.section-wrapper {
     background-position: center;
 }
 
-.cart-item .quantity {
+.cart-items .quantity {
     display: block;
     margin-top: 10px;
 }
 
 
-.cart-item .cart-total {
+.cart-items .cart-total {
     margin: 25px 0 18px;
     text-align: center;
 }
 
-.cart-item .quantity,
-.cart-item .cart-total {
+.cart-items .quantity,
+.cart-items .cart-total {
     color: var(--color-header);
 
 }
 
-.cart-item .quantity {
+.cart-items .quantity {
     font-size: 14px;
 }
 
-.cart-item .cart-total {
+.cart-items .cart-total {
     font-size: 15px;
 }
 
-.cart-item .cart-btn .btn {
+.cart-items .cart-btn .btn {
     display: block;
     font-size: 15px;
     padding: 7px 20px;
@@ -263,31 +267,31 @@ section.section-wrapper {
     text-align: center;
 }
 
-.cart-item .cart-btn .cart__view,
-.cart-item .cart-btn .cart__checkout {
+.cart-items .cart-btn .cart__view,
+.cart-items .cart-btn .cart__checkout {
     transition: all 0.1s linear;
     border-radius: 5px;
     border: 1px var(--color-text);
 }
 
-.cart-item .cart-btn .cart__view {
+.cart-items .cart-btn .cart__view {
     background-color: var(--bg-add-cart);
     margin-bottom: 10px;
 }
 
-.cart-item .cart-btn .cart__view:hover,
+.cart-items .cart-btn .cart__view:hover,
 .btn-add-card:hover  {
     background-color: #9561d4;
 }
 
 
 
-.cart-item .cart-btn .cart__checkout {
+.cart-items .cart-btn .cart__checkout {
     background-color: rgb(68, 65, 65);
     transition: all 0.1s linear;
 }
 
-.cart-item .cart-btn .cart__checkout:hover {
+.cart-items .cart-btn .cart__checkout:hover {
     background-color: rgb(156, 153, 153);
 }
 
