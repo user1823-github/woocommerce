@@ -3,6 +3,7 @@ const menuPrimary = document.getElementById('primary-navigation')
 const btnAddToCart = document.querySelectorAll('.btn-add-card')
 const loadAddToCart = document.querySelectorAll('.follow-the-leader')
 
+
 // console.log(btnAddToCart);
 // btnMenu.addEventListener('click', () => {
 //     menuPrimary.classList.toggle('active')
@@ -17,6 +18,9 @@ const loadAddToCart = document.querySelectorAll('.follow-the-leader')
 btnAddToCart.forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault()
+        console.log(1);
+        showMessage()
+        console.log(2);
         let btnItem = e.target
         let product = btnItem.parentElement
         let productName = product.querySelector('h2').innerText;
@@ -82,4 +86,23 @@ function totalCartItems() {
     totalItems.innerHTML = `
     Subtotal: £${sum}
     `
+}
+
+function showMessage() {
+    const popUp = document.getElementById('popup')
+
+    const toast = document.createElement('div')
+    toast.classList.add('toast')
+    toast.style.animation = `popupInLeft ease .3s, fadeOut linear 1s 2s forwards`
+
+
+    toast.innerHTML = `
+            <div class="popup-icons">
+                <svg class="popup-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <p class="popup-text">Sản phẩm đã được thêm vào Giỏ hàng</p>
+    `
+    popUp.appendChild(toast)
 }

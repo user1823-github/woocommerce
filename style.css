@@ -26,6 +26,55 @@ body {
     color: var(--color-text);
     background-color: rgb(236, 235, 234);
     overflow-x: hidden;
+    position: relative;
+}
+
+.toast {
+    position: fixed;
+    top: 220px;
+    right: 42px;
+    width: 260px;
+    height: 60px;
+    background-color: white;
+    border-left: 8px solid #47d864;
+    z-index: 2000;
+    padding: 10px 5px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+@keyframes popupInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 42px));
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }    
+}
+
+.popup-icons {
+    text-align: center;
+}
+
+.popup-icon {
+    width: 34px;
+    /* background-color: #47d864; */
+    color: #47d864;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.popup-text {
+    text-align: center;
+    font-size: 16px;
+    color: var(--bg-header);
 }
 
 ul, p, h1, h2, h3, hr {
